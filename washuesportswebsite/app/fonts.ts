@@ -13,3 +13,11 @@ export const sourceSansProBold = localFont({
     src: './SourceSansPro/SourceSansPro-Light.otf',
     variable: '--font-sans-light',
   })
+  export const sourceSansProRegular = localFont({
+    src: './SourceSansPro/SourceSansPro-Regular.otf',
+    variable: '--font-sans-regular',
+  })
+  export const sourceSansProExtraLight = localFont({
+    src: './SourceSansPro/SourceSansPro-ExtraLight.otf',
+    variable: '--font-sans-exlight',
+  })

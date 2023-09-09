@@ -1,4 +1,9 @@
-
+import CalendarApp from "./calendar"
 export default function Page() {
-    return <h1>Hello, Schedule Page!</h1>
+    return (
+        <div className="mx-[10px]">
+
+        <CalendarApp/>
+        </div>
+    );
   }

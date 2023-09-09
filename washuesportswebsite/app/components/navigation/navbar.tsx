@@ -20,7 +20,7 @@ const Navbar=() =>{
               alt="washu esports logo"
               height={150}
               width={150}
-              className="absolute"
+              className="ml-[20px] absolute"
           />
         </div>
         
