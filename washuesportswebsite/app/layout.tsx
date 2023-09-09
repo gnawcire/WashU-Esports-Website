@@ -2,7 +2,12 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import localFont from 'next/font/local'
-import { sourceSansProBold, sourceSansProBoldIt } from './fonts'
+import { sourceSansProBold, sourceSansProBoldIt, sourceSansProLight } from './fonts'
+import type { AppProps } from "next/app";
+import Link from "next/link"
+
+import NavBar from "./components/navigation/navbar"
+import Footer from "./components/footer/footer"
 
 export const metadata: Metadata = {
   title: 'WashU Esports',
@@ -16,7 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={sourceSansProBold.className}>{children}</body>
+      <body className={sourceSansProBold.className}>
+      
+        <NavBar/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   )
 }

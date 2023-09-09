@@ -1,35 +1,10 @@
 import Image from 'next/image'
 import { sourceSansProBoldIt, sourceSansProBold, sourceSansProLight } from './fonts'
+import Link from "next/link"
+
 export default function Home() {
   return (
-    <body>
-      {/* nav bar */}
-      
-      <div className="w-full bg-[#a51417] pt-1 border-[12px] border-[#a51417] relative z-10 flex justify-around items-center">
-        <div className={`${sourceSansProLight.className} text-lg text-[#eeeeee]`}>
-          Home
-        </div>
-        <div className={`${sourceSansProLight.className} text-lg text-[#eeeeee]`}>
-          Teams
-        </div>
-        <div className="flex justify-center">
-          <Image
-              src="/logo.svg"
-              alt="washu esports logo"
-              height={120}
-              width={120}
-              className="absolute"
-          />
-        </div>
-        
-        
-        <div className={`${sourceSansProLight.className} text-lg text-[#eeeeee]`}>
-          Schedule
-        </div>
-        <div className={`${sourceSansProLight.className} text-lg text-[#eeeeee]`}>
-          About
-        </div>
-      </div>
+    <>
       
       {/* top image w/words */}
       <div className="relative pt-14 w-full h-[65rem]">
@@ -47,11 +22,16 @@ export default function Home() {
             padding: '10px', // Add padding to the background
             borderRadius: '4px', // Add rounded corners
           }}>
-            Your home for esports at WashU.
+            Your home for Esports at WashU.
           </span>
         </div>
       </div>
-      {/* text + image  */}
+      {/* upcoming events */}
+      <div className="text-[#3d3d3d] flex items-center justify-center mt-20 text-4xl">
+
+        Upcoming Events
+      </div>
+      {/* text + image about club  */}
       <div className="flex items-center justify-center mt-20">
         <div className={`${sourceSansProBold.className} text-[#3d3d3d] text-5xl ml-40 max-w-[50%]`}>
           Embracing a diverse gaming community, inclusive of competitive gamers, casual gamers, and everyone in between.
@@ -72,9 +52,9 @@ export default function Home() {
         </div>
         
       </div>
-
+      {/* footer */}
       
-      
-    </body>
+     </> 
+    
   )
 }
