@@ -9,8 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors:{
-        'washu-grey': '#3d3d3d'
-      }
+        'washu-grey': '#3d3d3d',
+        'washu-red': '#a51417',
+      },
+      fontFamily:{
+        sourceSansBold: ['var(--font-source-sans-pro-bold'],
+        sourceSansBoldIt: ['var(--font-sans-boldit'],
+      },
     },
   },
   plugins: [],
