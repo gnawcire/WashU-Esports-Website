@@ -5,6 +5,7 @@ import localFont from 'next/font/local'
 import { sourceSansProBold, sourceSansProBoldIt, sourceSansProLight } from './fonts'
 import type { AppProps } from "next/app";
 import Link from "next/link"
+import { Analytics } from '@vercel/analytics/react';
 
 import NavBar from "./components/navigation/navbar"
 import Footer from "./components/footer/footer"
@@ -27,6 +28,7 @@ export default function RootLayout({
       
         <NavBar/>
         {children}
+        <Analytics />
         <Footer/>
       </body>
     </html>
