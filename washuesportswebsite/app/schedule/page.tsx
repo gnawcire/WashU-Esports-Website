@@ -1,3 +1,4 @@
+'use client'
 import CalendarApp from "./calendar"
 export default function Page() {
     return (
