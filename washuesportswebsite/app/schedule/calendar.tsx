@@ -28,7 +28,7 @@ export default function CalendarApp() {
         const eventRows = data.events.rows;
         const eventsData: EventsByDay = {};
 
-        eventRows.forEach((event) => {
+        eventRows.forEach((event: { date: string; starttime: string; endtime: string; description: string }) => {
           const date = event.date;
           const startTime = event.starttime;
           const endTime = event.endtime;
