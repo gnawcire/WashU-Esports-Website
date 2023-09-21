@@ -33,10 +33,10 @@ export default function Home() {
       </div>
       {/* text + image about club  */}
       <div className="flex items-center justify-center mt-20">
-        <div className={`${sourceSansProBold.className} text-[#3d3d3d] text-5xl ml-40 max-w-[50%]`}>
+        <div className={`${sourceSansProBold.className} text-[#3d3d3d] text-5xl max-w-[50%]`}>
           Embracing a diverse gaming community, inclusive of competitive gamers, casual gamers, and everyone in between.
         </div>
-        <div className="mr-40 flex">
+        <div className="w-fit lg:flex">
           <Image
             src="/2guysfistbumpinglan.jpg"
             alt="2 guys fist bumping at a LAN"
